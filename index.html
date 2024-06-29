@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APP CALCULADORA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .image-container {
+            position: relative;
+            max-width: 100%;
+            max-height: 400px;
+            /* Para hacer la imagen responsive */
+        }
+
+        .image-container img {
+            display: block;
+            width: 100%;
+            /* Para que la imagen ocupe todo el ancho del contenedor */
+            height: auto;
+            /* Para mantener la proporción */
+        }
+
+        .image-content {
+            position: absolute;
+            bottom: 20px;
+            /* Ajusta la posición del contenido respecto al borde inferior */
+            left: 20px;
+            /* Ajusta la posición del contenido respecto al borde izquierdo */
+            background-color: rgba(33, 238, 33, 0.7);
+            /* Fondo semi-transparente para el contenido */
+            padding: 10px;
+            /* Espacio interior del contenido */
+            margin-bottom: 10px;
+        }
+
+        .image-title {
+            color: #070707;
+            /* Color del texto */
+            font-size: 18px;
+            /* Tamaño del texto del título */
+            margin-bottom: 5px;
+            /* Espacio entre el título y el botón */
+        }
+
+        .button-link {
+            display: inline-block;
+            background-color: hsl(180, 4%, 5%);
+            /* Color de fondo del botón */
+            color: #e70505;
+            /* Color del texto del botón */
+            padding: 8px 15px;
+            /* Espacio interior del botón */
+            text-decoration: none;
+            /* Quitar subrayado del enlace */
+            border-radius: 5px;
+            /* Borde redondeado del botón */
+            transition: background-color 0.3s ease;
+            /* Transición suave para el color de fondo */
+        }
+
+        .button-link:hover {
+            background-color: #2980b9;
+            /* Color de fondo del botón al pasar el ratón */
+        }
+
+        @media screen and (max-width: 400px) {
+            body {
+                background: url(img2.jpg);
+                user-select: none;
+                display: flex;
+                flex-direction: column;
+                height: auto;
+            }
+
+            .image-container {
+                width: 100%;
+                height: auto;
+            }
+
+            .cuadrado {
+                color: red;
+                height: 80px;
+                width: 80px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: bold;
+                font-size: 3rem;
+                transition: 50ms ease-in-out;
+            }
+
+            .image-container img {
+                display: block;
+                width: 100%;
+                /* Para que la imagen ocupe todo el ancho del contenedor */
+                height: auto;
+                /* Para mantener la proporción */
+
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="image-container">
+        <img src="img3.jpg" alt="foto imagen robot">
+        <div class="image-content">
+            <div class="image-title">APP CALCULADORA SANTIAGO</div>
+            <a href="calculadora.html" class="button-link">IR A CALCULADORA</a>
+        </div>
+    </div>
+    <script>
+        alert("Hola soy Santiago, bienvenido a mi app calculadora.");
+    </script>
+</body>
+
+</html>

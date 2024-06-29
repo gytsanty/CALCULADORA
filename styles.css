@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: hsl(240, 4%, 5%);
+
+}
+.image-container {
+    position: relative;
+    max-width: 100%;
+    /* Para hacer la imagen responsive */
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    /* Para que la imagen ocupe todo el ancho del contenedor */
+    height: auto;
+    /* Para mantener la proporción */
+}
+
+.container {
+    position: relative;
+    max-width: 300px;
+    width: 100%;
+    border-radius: 12px;
+    padding: 10px 20px 20px;
+    background: rgb(47, 255, 0);
+    box-shadow: 0 5px 10px rgb(47, 255, 0);
+}
+
+.display {
+    height: 80px;
+    width: 100%;
+    outline: none;
+    border: none;
+    text-align: right;
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: #000e1a;
+    pointer-events: none;
+}
+
+.buttons {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.buttons button {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #161d2d;
+}
+
+.buttons button:active {
+    transform: scale(0.99);
+}
+
+.operator {
+    color: #36ff2f;
+}
+
+h5{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #070707;
+    text-align: center;
+}
+
+.button-link {
+    display: inline-block;
+    background-color: #e70505 ;
+    /* Color de fondo del botón */
+    color: black;
+    /* Color del texto del botón */
+    padding: 8px 15px;
+    /* Espacio interior del botón */
+    text-decoration: none;
+    /* Quitar subrayado del enlace */
+    border-radius: 5px;
+    /* Borde redondeado del botón */
+    transition: background-color 0.3s ease;
+    /* Transición suave para el color de fondo */
+    margin-top: 25rem;
+
+
+}
+
+.button-link:hover {
+    background-color: #2980b9;
+    /* Color de fondo del botón al pasar el ratón */
+}
+
