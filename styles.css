@@ -61,7 +61,7 @@ body {
     border: none;
     font-size: 20px;
     cursor: pointer;
-    background-color: #161d2d;
+    background-color: hwb(216 25% 15%);
 }
 
 .buttons button:active {
